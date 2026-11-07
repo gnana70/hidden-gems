@@ -1,0 +1,5 @@
+== memory before the run
+               total        used        free      shared  buff/cache   available
+Mem:           25044         399       23180           4        1464       24382
+Swap:           7168           0        7168
+6

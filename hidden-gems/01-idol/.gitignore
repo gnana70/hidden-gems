@@ -1,0 +1,5 @@
+# Only for this episode (the repository root .gitignore covers .env files and keys everywhere)
+/idol-sdk/
+/outputs/
+results/*/outputs/*.ply
+results/*/renders/*.mp4

@@ -1,0 +1,22 @@
+{
+  "env": {
+    "date": "2026-11-06T23:53:31",
+    "python": "3.12.16",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "torch": "2.15.0+cu132",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+    "gpu_total_gb": 8.0,
+    "nvidia_smi": "Fri Nov  6 23:53:32 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.43.02              KMD Version: 610.62        CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 ...    On  |   00000000:01:00.0 Off |                  N/A |\n| N/A   47C    P8             11W /  140W |      11MiB /   8192MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "ram_gb": 24.5
+  },
+  "optimize": true,
+  "runs": [],
+  "load": {
+    "seconds": 22.86,
+    "device_used_before_gb": 0.18,
+    "device_used_after_load_gb": 3.96,
+    "torch_allocated_after_load_gb": 3.44
+  }
+}

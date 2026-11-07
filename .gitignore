@@ -1,0 +1,26 @@
+# ---- Secrets: never commit tokens, keys or passwords (applies to every folder) ----
+# Each section has a .env.example; copy it to .env next to it and keep .env on your PC.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+client_secret*.json
+credentials.json
+token.json
+token.pickle
+
+# ---- Big or generated files (every section) ----
+*.ply
+*.mp4
+*.safetensors
+*.ckpt
+*.gguf
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+Thumbs.db

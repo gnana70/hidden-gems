@@ -1,0 +1,100 @@
+{
+  "env": {
+    "date": "2026-11-07T00:27:43",
+    "python": "3.12.16",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "torch": "2.15.0+cu132",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+    "gpu_total_gb": 8.0,
+    "nvidia_smi": "Sat Nov  7 00:27:44 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.43.02              KMD Version: 610.62        CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 ...    On  |   00000000:01:00.0 Off |                  N/A |\n| N/A   70C    P8             14W /  140W |      11MiB /   8192MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "ram_gb": 24.5
+  },
+  "optimize": true,
+  "runs": [
+    {
+      "name": "01-robot-toy",
+      "label": "cold (first run, compiles)",
+      "mode": "synthetic",
+      "steps": 50,
+      "gaussians": 262144,
+      "seed": 42,
+      "total_s": 97.61,
+      "preprocess_s": 1.5,
+      "encode_s": 0.7,
+      "sample_s": 94.34,
+      "decode_s": 1.07,
+      "torch_peak_allocated_gb": 4.95,
+      "torch_peak_reserved_gb": 5.0,
+      "device_peak_gb": 5.38,
+      "camera": {
+        "yaw": 2.2492939062146986,
+        "pitch": 0.04193698411280675,
+        "radius": 8.89771170740445,
+        "fov": 11.697000193026266
+      },
+      "num_gaussians_out": 262144
+    },
+    {
+      "name": "01-robot-toy",
+      "label": "default",
+      "mode": "synthetic",
+      "steps": 50,
+      "gaussians": 262144,
+      "seed": 42,
+      "total_s": 78.02,
+      "preprocess_s": 0.88,
+      "encode_s": 0.59,
+      "sample_s": 75.78,
+      "decode_s": 0.77,
+      "torch_peak_allocated_gb": 4.95,
+      "torch_peak_reserved_gb": 5.0,
+      "device_peak_gb": 5.38,
+      "camera": {
+        "yaw": 2.2492939062146986,
+        "pitch": 0.04193698411280675,
+        "radius": 8.89771170740445,
+        "fov": 11.697000193026266
+      },
+      "num_gaussians_out": 262144
+    },
+    {
+      "name": "02-red-panda",
+      "label": "default",
+      "mode": "synthetic",
+      "steps": 50,
+      "gaussians": 262144,
+      "seed": 42,
+      "total_s": 77.91,
+      "preprocess_s": 0.98,
+      "encode_s": 0.61,
+      "sample_s": 75.57,
+      "decode_s": 0.75,
+      "torch_peak_allocated_gb": 4.95,
+      "torch_peak_reserved_gb": 5.0,
+      "device_peak_gb": 5.38,
+      "camera": {
+        "yaw": 1.5184509232310892,
+        "pitch": 0.0740214893341485,
+        "radius": 1000.0,
+        "fov": 0.08546226169175726
+      },
+      "num_gaussians_out": 262144
+    }
+  ],
+  "load": {
+    "seconds": 14.4,
+    "device_used_before_gb": 0.18,
+    "device_used_after_load_gb": 3.79,
+    "torch_allocated_after_load_gb": 3.42
+  },
+  "summary": {
+    "images": 2,
+    "median_s": 78.02,
+    "min_s": 77.91,
+    "max_s": 78.02,
+    "max_torch_peak_gb": 4.95,
+    "max_device_peak_gb": 5.38
+  }
+}
